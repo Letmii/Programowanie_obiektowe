@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -17,8 +18,20 @@ namespace ConsoleApp1
             Console.WriteLine(a * b);
             Console.WriteLine(a / b);
 
-        }
+            List<Stud> list = new List<Stud>();
+            list.Add(new Stud() { Name = "aaa", Salary = 15615 });
+            list.Add(new Stud() { Name = "bbb", Salary = 21734 });
+            list.Add(new Stud() { Name = "ccc", Salary = 17457 });
+            list.Add(new Stud() { Name = "ddd", Salary = 62373 });
 
+            list.Sort();
+
+            foreach(var element in list)
+                {
+                Console.WriteLine("element");
+                }
+        }
+            
 
 
         public class Student: IEquatable<Student>
@@ -37,6 +50,29 @@ namespace ConsoleApp1
                 if (other == this) return true;
 
                 return Object.Equals(this.name, other.name) && Object.Equals(this.age, other.age);
+            }
+        }
+
+        class Stud : IComparable<Stud>
+        {
+            public int Salary { get; set; }
+            public string Name { get; set; }
+
+            public int CompareTo(Stud other)
+            {
+                
+                if (this.Salary == other.Salary)
+                {
+                    return this.Name.CompareTo(other.Name);
+                }
+               
+                return other.Salary.CompareTo(this.Salary);
+            }
+
+            public override string ToString()
+            {
+                
+                return this.Salary.ToString() + "," + this.Name;
             }
         }
 
