@@ -35,5 +35,16 @@ namespace Lab_02
             Console.WriteLine("student1 == student2: " + student1.Equals(student2)); // Output: student1 == student2: true
             Console.WriteLine("student1 == student3: " + student1.Equals(student3)); // Output: student1 == student3: false
         }
+
+        class Person
+        {
+            public string Name { get; set; }
+            public string Age { get; set; }
+        }
+
+        class Classroom
+        {
+            public string Name { get; set; }
+        }
     }
 }
