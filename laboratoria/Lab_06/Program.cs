@@ -50,7 +50,7 @@ namespace Lab_06
 
             Console.WriteLine("Zadanie 1 :");
             //1 zadanie
-
+           
             Console.WriteLine("Number of users in the list : " + users.Count);
 
             Console.WriteLine("Zadanie 2 :");
