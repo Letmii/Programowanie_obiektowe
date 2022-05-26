@@ -42,8 +42,10 @@ namespace Program
         [Key]
         public long ReservationId { get; set; }
         public long Id { get; set; }
-        [ForeignKey("Id")]
+        
         public string ReservationDate { get; set; }
+
+        [ForeignKey("Id")] 
         public UserLogin UserLogin { get; set; }
 
     }
