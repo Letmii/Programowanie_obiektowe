@@ -16,6 +16,8 @@ namespace Program
     {
         public DbSet<UserLogin> UserLogins { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Film> Films { get; set; }
+        public DbSet<Place> Places { get; set; }
     }
 
     public class UserLogin
@@ -35,6 +37,17 @@ namespace Program
         
     }
 
+    public class Reservation
+    {
+        [Key]
+        public long ReservationId { get; set; }
+        public long Id { get; set; }
+        [ForeignKey("Id")]
+        public string ReservationDate { get; set; }
+        public UserLogin UserLogin { get; set; }
+
+    }
+
     public class Film
     {
         [Key]
@@ -44,19 +57,6 @@ namespace Program
         public string Genre { get; set; }
         public string Director { get; set; }
 
-        
-        
-    }
-
-    public class Reservation
-    {
-        [Key]
-        public long ReservationId { get; set; }
-        [ForeignKey("Id")]
-        public string ReservationDate { get; set; }
-        public UserLogin UserLogin { get; set; }
-
-        
     }
 
     public class Place
@@ -65,7 +65,5 @@ namespace Program
         public long PlaceId { get; set; }
         public string Cinema { get; set; }
     }
-
-
     
 }
