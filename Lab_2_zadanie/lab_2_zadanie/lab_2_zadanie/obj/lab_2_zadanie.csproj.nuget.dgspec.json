@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bartek\\Desktop\\Nowy folder\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj": {}
+    "C:\\Users\\Bartek\\Source\\Repos\\Letmii\\Programowanie_obiektowe\\Lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bartek\\Desktop\\Nowy folder\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj": {
+    "C:\\Users\\Bartek\\Source\\Repos\\Letmii\\Programowanie_obiektowe\\Lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bartek\\Desktop\\Nowy folder\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj",
+        "projectUniqueName": "C:\\Users\\Bartek\\Source\\Repos\\Letmii\\Programowanie_obiektowe\\Lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj",
         "projectName": "lab_2_zadanie",
-        "projectPath": "C:\\Users\\Bartek\\Desktop\\Nowy folder\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj",
+        "projectPath": "C:\\Users\\Bartek\\Source\\Repos\\Letmii\\Programowanie_obiektowe\\Lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie.csproj",
         "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bartek\\Desktop\\Nowy folder\\lab_2_zadanie\\lab_2_zadanie\\obj\\",
+        "outputPath": "C:\\Users\\Bartek\\Source\\Repos\\Letmii\\Programowanie_obiektowe\\Lab_2_zadanie\\lab_2_zadanie\\lab_2_zadanie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bartek\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
