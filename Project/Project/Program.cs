@@ -2,21 +2,65 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace Program
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+            using (var db = new MoviesContext())
+            {
+
+                var movies = new List<Movie>
+                {
+                    new Movie
+                    {
+                        Title = "Jas fasola",
+                        Genre = "Horror",
+                        Director = "Mariusz"
+                    },
+                    new Movie
+                    {
+                        Title = "Naruto",
+                        Genre = "Anime",
+                        Director = "Patryk"
+                    },
+                    new Movie
+                    {
+                        Title = "Mario",
+                        Genre = "Thriller",
+                        Director = "Dariusz"
+                    },
+
+                };
+                
+                db.Movies.AddRange(movies);
+                db.SaveChanges();
+
+                // Display all Blogs from the database
+                var query = from b in db.Movies
+                            orderby b.Title
+                            select b;
+
+                Console.WriteLine("All Movies in the database:");
+                foreach (var item in query)
+                {
+                    Console.WriteLine(item.Title);
+                }
+
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadKey();
+            }
+
         }
     }
 
-    public class UsersContext : DbContext
+    public class MoviesContext : DbContext
     {
         public DbSet<UserLogin> UserLogins { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
-        public DbSet<Film> Films { get; set; }
+        public DbSet<Movie> Movies { get; set; }
         public DbSet<Place> Places { get; set; }
     }
 
@@ -50,11 +94,10 @@ namespace Program
 
     }
 
-    public class Film
+    public class Movie
     {
         [Key]
-        public long FilmId { get; set; }
-        public long Id { get; set; }
+        public long MovieId { get; set; }
         public string Title { get; set; }
         public string Genre { get; set; }
         public string Director { get; set; }
