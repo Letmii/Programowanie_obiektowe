@@ -2,11 +2,17 @@
   "ExpandedNodes": [
     "",
     "\\laboratoria",
+<<<<<<< HEAD
     "\\laboratoria\\Lab01",
     "\\laboratoria\\Lab_06",
     "\\Project",
     "\\Project\\Project"
   ],
   "SelectedNode": "\\Project\\Project\\Project.csproj",
+=======
+    "\\laboratoria\\Lab_06"
+  ],
+  "SelectedNode": "\\laboratoria\\Lab_06\\Program.cs",
+>>>>>>> d5272147f003d9aa6ebab8470dc0ebbec063e018
   "PreviewInSolutionExplorer": false
 }
